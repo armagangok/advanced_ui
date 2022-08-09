@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './dummy_data.dart';
+import '../feature/dummy_data.dart';
 
 class ParallaxView extends StatefulWidget {
   const ParallaxView({Key? key}) : super(key: key);
@@ -113,7 +113,7 @@ class ParallaxViewState extends State<ParallaxView> {
 
   Widget buildPageView() {
     return PageView.builder(
-      itemCount: paintings.length,
+      itemCount: paintingMap.length,
       controller: pageController,
       itemBuilder: (context, i) {
         return Transform.scale(
@@ -125,7 +125,7 @@ class ParallaxViewState extends State<ParallaxView> {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(15),
                   child: Image.asset(
-                    paintings[i]['image'],
+                    paintingMap[i]['image'],
                     height: 370,
                     fit: BoxFit.cover,
                     alignment: Alignment(-pageOffset.abs() + i, 0),
@@ -136,7 +136,7 @@ class ParallaxViewState extends State<ParallaxView> {
                   bottom: 20,
                   right: 10,
                   child: Text(
-                    paintings[i]['name'],
+                    paintingMap[i]['name'],
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 35,

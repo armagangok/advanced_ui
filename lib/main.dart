@@ -1,5 +1,6 @@
-import 'package:advanced_ui/parallax_effect/parallax_view.dart';
 import 'package:flutter/material.dart';
+
+import 'folding_animation/folding_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const ParallaxView(),
+      theme: ThemeData.dark(),
+      home: const FoldingView(),
     );
   }
 }

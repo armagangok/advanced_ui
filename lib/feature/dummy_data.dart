@@ -1,4 +1,4 @@
-List<Map> paintings = [
+const List<Map> paintingMap = [
   {
     'image': 'assets/painting6.jpeg',
     'name': 'The Sower',
@@ -27,4 +27,23 @@ List<Map> paintings = [
   //   'image': 'assets/painting8.jpeg',
   //   'name': 'The Night Café',
   // },
-]; 
+];
+
+List<String> paintingList = const [
+  'assets/painting6.jpeg',
+
+  'assets/painting2.jpeg',
+
+  'assets/painting3.jpeg',
+
+  'assets/painting4.jpeg',
+
+  'assets/painting5.jpeg',
+
+  'assets/painting7.jpeg',
+
+  // {
+  //   'image': 'assets/painting8.jpeg',
+  //   'name': 'The Night Café',
+  // },
+];
