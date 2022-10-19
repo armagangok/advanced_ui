@@ -1,6 +1,5 @@
+import 'package:advanced_ui/onboarding_animation/onboarding_view.dart';
 import 'package:flutter/material.dart';
-
-import 'folding_animation/folding_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: const FoldingView(),
+      home: const OnboardingView(),
     );
   }
 }

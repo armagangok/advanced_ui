@@ -29,7 +29,7 @@ const List<Map> paintingMap = [
   // },
 ];
 
-List<String> paintingList = const [
+const List<String> paintingList = [
   'assets/painting6.jpeg',
 
   'assets/painting2.jpeg',
